@@ -1,0 +1,248 @@
+@import "reset";
+@import "colors";
+@import "mixins";
+@import "animations";
+@import "utilities";
+@import "forms";
+//
+body,
+html {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: .9em;
+	font-weight: 300;
+	line-height: 1.4;
+	color: $hfh-text-100;
+	width: 100%;
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	@include mobile {
+		width: 80%;
+	}
+}
+
+.btn {
+	background: $hfh-green-100;
+	padding: 10px 30px;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	transition: all 250ms ease-in-out;
+	&:hover {
+		background: darken($hfh-green-100, 5%);
+	}
+	&.alternate {
+		background: none;
+		border: 1px solid $hfh-grey-100;
+		color: $hfh-text-200;
+		&:hover,
+		&.active {
+			border-color: $hfh-green-100;
+			color: $hfh-green-100;
+		}
+	}
+}
+
+.signin {
+	position: relative;
+}
+
+.nav-bar {
+	width: 100%;
+	padding: 20px 0;
+	height: 50px;
+	float: left;
+	.logo {
+		height: 35px;
+	}
+}
+
+.section,
+footer {
+	width: 100%;
+	float: left;
+	padding: 70px 0;
+	&.banner {
+		height: calc(100vh - 300px);
+		margin-top: 6em;
+		@include mobile {
+			margin-top: 0;
+			height: auto !important;
+		}
+		img {
+			width: 100%;
+			margin-right: 0px;
+			opacity: 0;
+			animation: banner 300ms ease-in-out 800ms;
+			animation-fill-mode: forwards;
+		}
+		h1 {
+			margin-top: 0px;
+			opacity: 0;
+			animation: slideIn 300ms ease-in-out 300ms;
+			animation-fill-mode: forwards;
+		}
+		p {
+			margin-top: 20px;
+			opacity: 0;
+			animation: slideIn2 300ms ease-in-out 500ms;
+			animation-fill-mode: forwards;
+		}
+		.signup-btn {
+			margin-top: 20px;
+			opacity: 0;
+			animation: slideIn2 300ms ease-in-out 600ms;
+			animation-fill-mode: forwards;
+		}
+	}
+	&.usp {
+		text-align: center;
+		img {
+			width: 70%;
+			@include mobile {
+				width: 50%;
+			}
+		}
+	}
+	&.categories {
+		background: $hfh-green-100;
+		color: white;
+		text-align: center;
+		h1 {
+			color: white;
+			font-size: 1.8em;
+		}
+		img {
+			width: 100%;
+			&.desktop {
+				@include mobile {
+					display: none;
+				}
+			}
+			&.mobile {
+				display: none;
+				@include mobile {
+					display: block;
+				}
+			}
+		}
+		.btn.white {
+			border-color: white;
+			color: white;
+			&:hover {
+				background: white;
+				color: $hfh-green-100;
+			}
+		}
+	}
+	&.reviews {
+		h1 {
+			font-size: 1.8em;
+			text-align: center;
+		}
+		.cta {
+			text-align: center;
+		}
+	}
+	&.reviews>.review-cards {
+		width: 100%;
+	}
+}
+
+.card {
+	width: 430px;
+	padding: 20px;
+	margin-top: 20px;
+	height: 140px;
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #ececec;
+	@include mobile {
+		width: calc(100% - 20px);
+		height: auto;
+	}
+	.avatar {
+		width: 75px;
+		background: #333;
+		display: block;
+		border-radius: 80px;
+		border: 0;
+		&.border {
+			border: 1px solid #ececec;
+		}
+		@include mobile {
+			width: 20%;
+		}
+	}
+	.review {
+		margin-left: 20px;
+		width: 330px;
+		color: $hfh-text-200;
+		@include mobile {
+			width: calc(80% - 22px);
+		}
+		.name {
+			font-size: 1.2em;
+			font-weight: 400;
+		}
+		.location {
+			font-size: .9em;
+			color: $hfh-text-100
+		}
+	}
+}
+
+footer {
+	border-top: 1px solid $hfh-grey-100;
+	font-size: 0.9em;
+	@include mobile {
+		padding: 20px 0;
+	}
+	.need {
+		font-weight: 400;
+		color: $hfh-text-200;
+	}
+	.help-email {
+		color: $hfh-green-100;
+	}
+	.logo {
+		height: 25px;
+	}
+	.copyright {
+		font-size: .7em;
+	}
+	.foot-links {
+		text-align: right;
+		@include mobile {
+			text-align: center;
+			width: 100%;
+			float: left;
+			margin-bottom: 20px;
+		}
+		.links {
+			padding: 5px;
+		}
+		.links a {
+			text-decoration: none;
+			color: $hfh-text-200;
+		}
+	}
+	.hfh-info {
+		@include mobile {
+			display: none;
+		}
+	}
+	.hfh-info-mobile {
+		display: none;
+		@include mobile {
+			display: block;
+		}
+	}
+}

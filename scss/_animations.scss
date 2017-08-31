@@ -1,0 +1,36 @@
+// Banner animations
+@keyframes slideIn {
+	// animation for Banner Heading
+	from {
+		margin-top: 70px;
+		opacity: 0;
+	}
+	to {
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn2 {
+	// animation for Banner Caption 
+	from {
+		margin-top: 30px;
+		opacity: 0;
+	}
+	to {
+		margin-top: 20px;
+		opacity: 1;
+	}
+}
+
+@keyframes banner {
+	// animation for Banner image
+	from {
+		margin-right: -30px;
+		opacity: 0;
+	}
+	to {
+		margin-top: 0px;
+		opacity: 1;
+	}
+}

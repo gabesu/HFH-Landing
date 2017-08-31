@@ -1,0 +1,80 @@
+h1 {
+	color: $hfh-text-200;
+	font-size: 2.2em;
+	font-weight: 400;
+}
+
+// floats
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+// Widths
+.width-20 {
+	width: 20%;
+}
+
+.width-30 {
+	width: 30%;
+}
+
+.width-35 {
+	width: 35%;
+}
+
+.width-40 {
+	width: 40%;
+}
+
+.width-60 {
+	width: 60%;
+}
+
+.width-65 {
+	width: 65%;
+}
+
+.width-70 {
+	width: 70%;
+}
+
+// Margins
+.margin-10 {
+	margin-top: 10px;
+}
+
+.margin-20 {
+	margin-top: 20px;
+}
+
+.margin-50 {
+	margin-top: 50px;
+}
+
+.margin-100 {
+	margin-top: 100px;
+}
+
+//flexbox
+.flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.flex-1 {
+	flex: 0 1 auto;
+}
+
+// column mobile
+.column {
+	@include mobile {
+		width: 100%;
+		margin-top: 3em;
+		text-align: center;
+	}
+}
