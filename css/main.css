@@ -262,6 +262,9 @@ html {
   padding: 20px 0;
   height: 50px;
   float: left; }
+  @media (max-width: 600px) {
+    .nav-bar {
+      padding-bottom: 5px; } }
   .nav-bar .logo {
     height: 35px; }
     @media (max-width: 600px) {
@@ -285,6 +288,7 @@ footer {
       .section.banner,
       footer.banner {
         margin-top: 0;
+        padding-top: 0 !important;
         height: auto !important; } }
     .section.banner img,
     footer.banner img {

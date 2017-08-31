@@ -63,6 +63,9 @@ html {
 	padding: 20px 0;
 	height: 50px;
 	float: left;
+	@include mobile {
+		padding-bottom: 5px;
+	}
 	.logo {
 		height: 35px;
 		@include mobile {
@@ -84,6 +87,7 @@ footer {
 		margin-top: 6em;
 		@include mobile {
 			margin-top: 0;
+			padding-top: 0 !important;
 			height: auto !important;
 		}
 		img {
