@@ -218,6 +218,9 @@ footer {
 	.copyright {
 		font-size: .7em;
 	}
+	.social img {
+		height: 32px;
+	}
 	.foot-links {
 		text-align: right;
 		@include mobile {

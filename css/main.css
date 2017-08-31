@@ -400,6 +400,8 @@ footer {
     height: 25px; }
   footer .copyright {
     font-size: .7em; }
+  footer .social img {
+    height: 32px; }
   footer .foot-links {
     text-align: right; }
     @media (max-width: 600px) {
