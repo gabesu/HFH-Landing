@@ -4,7 +4,6 @@ const signinBtn = document.querySelector('.signin-btn');
 const signupModal = document.querySelector('.signup-modal');
 
 function showElement(e) {
-	e.stopPropagation();
 	e.preventDefault();
 	const formData = this.dataset.show;
 	const displayForm = document.querySelector(`.form[data-show="${formData}"]`);
