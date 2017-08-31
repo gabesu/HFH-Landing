@@ -35,6 +35,7 @@ html {
 	color: white;
 	font-weight: 400;
 	transition: all 250ms ease-in-out;
+	-webkit-appearance: none;
 	&:hover {
 		background: darken($hfh-green-100, 5%);
 	}

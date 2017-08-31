@@ -148,7 +148,8 @@ h1 {
     border-radius: 5px;
     border: 1px solid #DEDEDE;
     outline: none;
-    font-size: 1em; }
+    font-size: 1em;
+    -webkit-appearance: none; }
     .signin-form input[type="text"]:focus, .signup-form input[type="text"]:focus,
     .signin-form input[type="password"]:focus,
     .signup-form input[type="password"]:focus {
@@ -159,7 +160,8 @@ h1 {
     font-size: 1em;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
-    outline: none; }
+    outline: none;
+    -webkit-appearance: none; }
   .signin-form .forgot-pass, .signup-form .forgot-pass {
     margin-top: 10px;
     color: #9B9B9B;
@@ -178,7 +180,8 @@ h1 {
   top: 0;
   left: 0;
   z-index: 1000;
-  display: none; }
+  display: none;
+  cursor: pointer; }
   .modal.show {
     display: flex; }
   @media (max-width: 600px) {
@@ -235,7 +238,8 @@ html {
   display: inline-block;
   color: white;
   font-weight: 400;
-  transition: all 250ms ease-in-out; }
+  transition: all 250ms ease-in-out;
+  -webkit-appearance: none; }
   .btn:hover {
     background: #37a467; }
   .btn.alternate {
