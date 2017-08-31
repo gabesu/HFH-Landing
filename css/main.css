@@ -222,6 +222,10 @@ html {
   body.no-scroll,
   html.no-scroll {
     overflow: hidden; }
+  @media (max-width: 600px) {
+    body,
+    html {
+      cursor: pointer; } }
 
 .container {
   width: 960px;

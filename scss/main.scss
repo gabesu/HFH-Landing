@@ -16,6 +16,9 @@ html {
 	&.no-scroll {
 		overflow: hidden;
 	}
+	@include mobile {
+		cursor: pointer;
+	}
 }
 
 .container {
