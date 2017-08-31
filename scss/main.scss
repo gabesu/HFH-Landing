@@ -73,6 +73,9 @@ footer {
 	width: 100%;
 	float: left;
 	padding: 70px 0;
+	@include mobile {
+		padding: 40px 0;
+	}
 	&.banner {
 		height: calc(100vh - 300px);
 		margin-top: 6em;
