@@ -264,6 +264,9 @@ html {
   float: left; }
   .nav-bar .logo {
     height: 35px; }
+    @media (max-width: 600px) {
+      .nav-bar .logo {
+        height: 25px; } }
 
 .section,
 footer {

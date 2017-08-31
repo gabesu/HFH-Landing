@@ -65,6 +65,9 @@ html {
 	float: left;
 	.logo {
 		height: 35px;
+		@include mobile {
+			height: 25px;
+		}
 	}
 }
 

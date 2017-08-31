@@ -21,16 +21,21 @@ function showElement(e) {
 
 	displayForm.addEventListener('click', noClick);
 
-
-	window.addEventListener('click', function (e) {
+	function hideElement(e) {
 		displayForm.classList.remove('show');
 		setTimeout(function (e) {
 			displayForm.parentNode.classList.remove('show');
 		}, 300);
 		signinBtn.classList.remove('active');
 		document.querySelector('body').classList.remove('no-scroll');
-	});
+	}
+
+
+	window.addEventListener('click', hideElement);
+	window.addEventListener('touchstart', hideElement);
 }
+
+
 
 
 function noClick(e) {
