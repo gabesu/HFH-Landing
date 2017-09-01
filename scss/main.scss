@@ -8,7 +8,7 @@
 body,
 html {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 0.95em;
+	font-size: 1em;
 	font-weight: 300;
 	line-height: 1.4;
 	color: $hfh-text-100;
@@ -23,7 +23,7 @@ html {
 }
 
 .container {
-	width: 960px;
+	width: 90%;
 	margin: 0 auto;
 	@include mobile {
 		width: 80%;
@@ -174,7 +174,7 @@ footer {
 .card {
 	width: 430px;
 	padding: 20px;
-	margin-top: 20px;
+	margin: 10px;
 	height: 150px;
 	background: #fff;
 	border-radius: 10px;

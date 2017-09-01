@@ -68,6 +68,9 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	&.center {
+		justify-content: center;
+	}
 }
 
 .flex-1 {
